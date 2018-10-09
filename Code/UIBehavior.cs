@@ -12,7 +12,7 @@ namespace DraconianMarshmallows.UI
             base.Start();
         }
 
-        protected virtual void SetActive(bool active)
+        public virtual void SetActive(bool active)
         {
             gameObject.SetActive(active);
         }
