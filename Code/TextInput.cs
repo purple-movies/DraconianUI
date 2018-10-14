@@ -18,7 +18,7 @@ namespace DraconianMarshmallows.UI
 
         public void ShowError(string error)
         {
-            errorTextComponent.text = text;
+            errorTextComponent.text = error;
             errorTextComponent.gameObject.SetActive(true);
         }
 
