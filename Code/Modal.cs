@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -22,11 +20,6 @@ namespace DraconianMarshmallows.UI
         public void SetDismissButton(string label)
         {
             dismissButtonText.text = label;
-        }
-
-        protected override void Start()
-        {
-            base.Start();
         }
 
         private void ShowInfoMessage(string message, Action onDismiss)

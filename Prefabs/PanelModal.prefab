@@ -281,7 +281,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   messageText: {fileID: 511672412534025357}
   dismissButton: {fileID: 715791144114136549}
-  dismissButtonText: {fileID: 0}
+  dismissButtonText: {fileID: 1783614364747059951}
 --- !u!1 &6161521669381214302
 GameObject:
   m_ObjectHideFlags: 0

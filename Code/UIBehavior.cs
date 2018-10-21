@@ -1,12 +1,12 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using DraconianMarshmallows.UI.Localization;
 using UnityEngine.EventSystems;
 
 namespace DraconianMarshmallows.UI
 {
     public class UIBehavior : UIBehaviour
     {
+        public Localizer Localizer; 
+
         protected override void Start()
         {
             base.Start();
