@@ -5,11 +5,12 @@ namespace DraconianMarshmallows.UI
 {
     public class UIBehavior : UIBehaviour
     {
-        public Localizer Localizer; 
+        protected IParentUIController parentUIController;
 
-        protected override void Start()
+        ///<summary>Used to initialize UI from a parent controller that's set necessary properties.</summary>
+        public virtual void Initialize(IParentUIController parentUIController)
         {
-            base.Start();
+            this.parentUIController = parentUIController;
         }
 
         public virtual void SetActive(bool active)

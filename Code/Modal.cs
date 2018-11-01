@@ -7,19 +7,24 @@ namespace DraconianMarshmallows.UI
     public class Modal : UIBehavior
     {
         [SerializeField] private Text messageText; 
-        [SerializeField] private Button dismissButton;
-        [SerializeField] private Text dismissButtonText; 
+        [SerializeField] private ButtonPlus dismissButton;
         
-        private Action onDismiss;
+        public Action onDismiss;
+
+        public override void Initialize(IParentUIController parentUIController)
+        {
+            base.Initialize(parentUIController);
+            dismissButton.LabelText = parentUIController.GetLocalizer().GetLocalized("ok");
+        }
 
         public void ShowInfoMessage(string message)
         {
             ShowInfoMessage(message, null);
         }
 
-        public void SetDismissButton(string label)
+        public void SetDismissButtonLabel(string label)
         {
-            dismissButtonText.text = label;
+            dismissButton.LabelText = label;
         }
 
         private void ShowInfoMessage(string message, Action onDismiss)

@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 5275580491909524939}
   - component: {fileID: 5275580491909524940}
   - component: {fileID: 5275580491909524941}
-  - component: {fileID: 5275580491909524938}
+  - component: {fileID: 3529672240556593389}
   m_Layer: 5
-  m_Name: Button
+  m_Name: ButtonPlus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!114 &5275580491909524938
+--- !u!114 &3529672240556593389
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -83,7 +83,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5275580491909524936}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1392445389, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Script: {fileID: 11500000, guid: d9bd9d85350aeb245a4f7b4f20638760, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
@@ -115,6 +115,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  labelTextComponent: {fileID: 5275580492164312224}
 --- !u!1 &5275580492164312254
 GameObject:
   m_ObjectHideFlags: 0
