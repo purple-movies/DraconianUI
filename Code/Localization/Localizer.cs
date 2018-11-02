@@ -44,11 +44,11 @@ namespace DraconianMarshmallows.UI.Localization
             if (localizedStrings.TryGetValue(key, out value))
                 return value;
 
-            Debug.LogWarningFormat("Failed to find localized: %s", key); 
+            Debug.LogWarningFormat("Failed to find localized: " + key); 
             if (defaultStrings.TryGetValue(key, out value))
                 return value; // Fallback to default strings. 
 
-            Debug.LogWarningFormat("Failed to find default string: %s", key); 
+            Debug.LogWarningFormat("Failed to find default string: " + key); 
             return key; // Finally fallback to key so you can see it failed. 
         }
 

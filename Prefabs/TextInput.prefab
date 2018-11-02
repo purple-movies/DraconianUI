@@ -190,7 +190,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 150753238797746089}
   m_TextComponent: {fileID: 150753238775747453}
   m_Placeholder: {fileID: 150753239128393950}
   m_ContentType: 0
@@ -217,6 +217,7 @@ MonoBehaviour:
   m_CaretWidth: 1
   m_ReadOnly: 0
   errorTextComponent: {fileID: 2788893451091892660}
+  placeHolderText: {fileID: 150753239128393950}
 --- !u!1 &150753239128393944
 GameObject:
   m_ObjectHideFlags: 0

@@ -9,26 +9,17 @@ namespace DraconianMarshmallows.UI
     public class TextInput : InputField
     {
         [SerializeField] private Text errorTextComponent;
+        [SerializeField] private Text placeHolderText;
 
-        private Text placeHolderText;
-
-        public string PlaceHolder
-        {
-            get
-            {
-                return placeHolderText.text;
-            }
-            set
-            {
-                placeHolderText.text = value;
-            }
+        public string PlaceHolder {
+            get { return placeHolderText.text; }
+            set { placeHolderText.text = value; }
         }
 
         protected override void Start()
         {
             base.Start();
             errorTextComponent.gameObject.SetActive(false);
-            placeHolderText = placeholder.GetComponent<Text>(); 
         }
 
         public void ShowError(string error)

@@ -8,11 +8,13 @@ namespace DraconianMarshmallows.UI
     public class TextInputEditor : InputFieldEditor
     {
         SerializedProperty mErrorText;
+        SerializedProperty mPlaceHolderText;
 
         protected override void OnEnable()
         {
             base.OnEnable();
             mErrorText = serializedObject.FindProperty("errorTextComponent");
+            mPlaceHolderText = serializedObject.FindProperty("placeHolderText");
         }
 
         public override void OnInspectorGUI()
@@ -20,6 +22,7 @@ namespace DraconianMarshmallows.UI
             serializedObject.Update();
             base.OnInspectorGUI();
             EditorGUILayout.PropertyField(mErrorText);
+            EditorGUILayout.PropertyField(mPlaceHolderText);
             serializedObject.ApplyModifiedProperties();
         }
     }
