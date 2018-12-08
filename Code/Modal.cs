@@ -27,6 +27,18 @@ namespace DraconianMarshmallows.UI
             dismissButton.LabelText = label;
         }
 
+        public void ShowWaitingMessage(string message)
+        {
+            dismissButton.gameObject.SetActive(false);
+            messageText.text = message;
+            SetActive(true);
+        }
+
+        public void Dismiss()
+        {
+            internalOnDismiss();
+        }
+
         private void ShowInfoMessage(string message, Action onDismiss)
         {
             messageText.text = message;
