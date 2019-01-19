@@ -19,7 +19,13 @@ namespace DraconianMarshmallows.UI
 
         public void ShowInfoMessage(string message)
         {
-            ShowInfoMessage(message, null);
+            ShowInfoMessage(message, null, null);
+        }
+
+        public void ShowInfoMessage(string message, string dismissButtonLabel, Action onDismiss)
+        {
+            ShowInfoMessage(message, onDismiss);
+            if (dismissButtonLabel != null) SetDismissButtonLabel(dismissButtonLabel);
         }
 
         public void SetDismissButtonLabel(string label)
@@ -49,7 +55,11 @@ namespace DraconianMarshmallows.UI
 
         private void internalOnDismiss()
         {
-            if (onDismiss != null) onDismiss();
+            if (onDismiss != null)
+            {
+                onDismiss();
+                onDismiss = null;
+            }
             dismissButton.onClick.RemoveAllListeners(); 
             SetActive(false);
         }
